@@ -2,9 +2,9 @@
 
 This is the current state of my portfolio project.
 
-### v0.03 - Created next.js project (21.08.25 - CURRENT)
+#### v0.03 - Created next.js project (21.08.25)
 
-### v.0.045 - Added MUI and installed Quicksand font
+#### v.0.045 - Added MUI and installed Quicksand font (21.08.25 - CURRENT)
 
 ### v.0.06 - Add MUI + theme with golden accent.
 
