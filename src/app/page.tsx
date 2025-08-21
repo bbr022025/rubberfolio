@@ -1,95 +1,106 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import * as React from "react";
+import { Box, Container } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Grid } from "@mui/material";
+import { Paper } from "@mui/material";
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <Container
+      sx={{
+        bgcolor: "background.default",
+        margin: "1rem",
+        borderRadius: "1rem",
+      }}
+    >
+      <Grid container sx={{ padding: "1rem" }} spacing={2}>
+        <Grid size={12}>
+          <Paper elevation={8} sx={{ bgcolor: "primary.main" }}>
+            <Typography variant="h1" sx={{ textAlign: "center" }}>
+              Typography
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid size={6}>
+          <Paper sx={{ padding: "0.5rem" }} elevation={5}>
+            <Typography variant="h1">Heading 1</Typography>
+            <Typography variant="h2">Heading 2</Typography>
+            <Typography variant="h3">Heading 3</Typography>
+            <Typography variant="h4">Heading 4</Typography>
+            <Typography variant="h5">Heading 5</Typography>
+            <Typography variant="h6">Heading 6</Typography>
+          </Paper>
+        </Grid>
+        <Grid size={6}>
+          <Paper sx={{ padding: "0.5rem" }} elevation={3}>
+            <Typography variant="subtitle1">Subtitle 1</Typography>
+            <Typography variant="subtitle2">Subtitle 2</Typography>
+            <Typography variant="body1">Body1</Typography>
+            <Typography variant="body2">Body2</Typography>
+            <Typography variant="button">Button</Typography>
+            <Typography variant="caption">Caption</Typography>
+            <Typography variant="overline">Overline</Typography>
+          </Paper>
+        </Grid>
+        <Grid size={12}>
+          <Typography variant="body1">Primary</Typography>
+          <Paper
+            sx={{
+              display: "flex",
+              gap: "0.5em",
+              padding: "0.2em",
+              alignItems: "center",
+            }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <Box
+              sx={{
+                width: 50,
+                height: 50,
+                borderRadius: 2,
+                bgcolor: "primary.main",
+              }}
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
+            <Typography variant="body2">palette.primary.main</Typography>
+          </Paper>
+          <Typography variant="body1">Secondary</Typography>
+          <Paper
+            sx={{
+              display: "flex",
+              gap: "0.5em",
+              padding: "0.2em",
+              alignItems: "center",
+            }}
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <Box
+              sx={{
+                width: 50,
+                height: 50,
+                borderRadius: 2,
+                bgcolor: "secondary.main",
+              }}
+            />
+            <Typography variant="body2">palette.secondary.main</Typography>
+          </Paper>
+          <Typography variant="body1">Background</Typography>
+          <Paper
+            sx={{
+              display: "flex",
+              gap: "0.5em",
+              padding: "0.2em",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              sx={{
+                width: 50,
+                height: 50,
+                borderRadius: 2,
+                bgcolor: "background.default",
+              }}
+            />
+            <Typography variant="body2">background.default</Typography>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }

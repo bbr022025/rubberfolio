@@ -26,7 +26,15 @@ export default function RootLayout({
     <html lang="en" className={quicksand.variable}>
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
-          <body>{children}</body>
+          <body
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {children}
+          </body>
         </ThemeProvider>
       </AppRouterCacheProvider>
     </html>
