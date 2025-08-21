@@ -28,8 +28,3 @@ This is the current state of my portfolio project.
 
 - Applied Google Font (rounded typeface)
 - Refined spacing and nav design
-
-## v0.5 – Deployment
-
-- Pushed to GitHub
-- Deployed on Vercel
