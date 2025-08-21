@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Changelog plan
 
-## Getting Started
+This is the current state of my portfolio project.
 
-First, run the development server:
+### v0.03 - Created next.js project (21.08.25 - CURRENT)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### v.0.045 - Added MUI and installed Quicksand font
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### v.0.06 - Add MUI + theme with golden accent.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## v0.1 – Initial Layout Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Created Next.js project
+- Added MUI + theme with warm golden accent
+- Built Layout with side nav (desktop + mobile drawer)
 
-## Learn More
+## v0.2 – Home Page MVP
 
-To learn more about Next.js, take a look at the following resources:
+- Added tagline: "Frontend developer building modern web applications"
+- Created SkillGrid with JSON-driven data
+- Added icons stored in /public/icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## v0.3 – Contact Page MVP
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Added MUI buttons linking to GitHub, LinkedIn, Email
 
-## Deploy on Vercel
+## v0.4 – Styling & Polish
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Applied Google Font (rounded typeface)
+- Refined spacing and nav design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## v0.5 – Deployment
+
+- Pushed to GitHub
+- Deployed on Vercel
