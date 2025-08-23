@@ -2,7 +2,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Quicksand } from "next/font/google";
-import { ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "../theme/theme";
 
 const quicksand = Quicksand({
@@ -26,11 +26,11 @@ export default function RootLayout({
     <html lang="en" className={quicksand.variable}>
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
+          <CssBaseline />
           <body
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              flexDirection: "row",
             }}
           >
             {children}

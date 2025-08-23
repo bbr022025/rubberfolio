@@ -1,8 +1,10 @@
 import * as React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Button, Container } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Paper } from "@mui/material";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <Container
@@ -99,6 +101,13 @@ export default function Home() {
             />
             <Typography variant="body2">background.default</Typography>
           </Paper>
+        </Grid>
+        <Grid size={8}>
+          <Button variant="outlined" color="error">
+            <Link href="/typography">
+              <Typography variant="button">View Typography</Typography>
+            </Link>
+          </Button>
         </Grid>
       </Grid>
     </Container>

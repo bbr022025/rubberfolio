@@ -8,9 +8,14 @@ This is the current state of my portfolio project.
 
 ##### v.0.046 - Created Project scaffolding (21.08.25)
 
-##### v.0.05 - Created a basic typography page with custom MUI-theme (21.08.25 - CURRENT)
+##### v.0.05 - Created a basic typography page with custom MUI-theme (21.08.25)
 
 ### v.0.06 - Add MUI + theme with golden accent.
+
+#### v.0.062 - Routing setup (23.08.25 - CURRENT)
+
+- Added CssBaseline
+- Added basic routing
 
 ## v0.1 – Initial Layout Setup
 
