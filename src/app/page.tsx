@@ -8,10 +8,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <Container
+      fixed
       sx={{
         bgcolor: "background.default",
-        margin: "1rem",
         borderRadius: "1rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Grid container sx={{ padding: "1rem" }} spacing={2}>

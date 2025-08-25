@@ -10,7 +10,7 @@ import {
 export default function typographyPage() {
   return (
     <>
-      <Container sx={{ margin: "1rem", borderRadius: "1rem" }}>
+      <Container fixed sx={{ borderRadius: "1rem" }}>
         <Paper sx={{ padding: "1em" }}>
           <Grid container spacing={1}>
             <Grid size={12}>
