@@ -5,6 +5,8 @@ import { Quicksand } from "next/font/google";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "../theme/theme";
 import DrawerComponent from "./drawer/page";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const quicksand = Quicksand({
   weight: ["300", "400", "500", "700"],
@@ -16,6 +18,21 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   title: "Brian Blomlie",
   description: "Webdesigner based in Oslo",
+  authors: [{ name: "Brian Blomlie" }],
+  openGraph: {
+    title: "Brian Blomlie",
+    description:
+      "Webdesigner basert i Oslo. Webdesign og -løsninger for alle typer aktører.",
+    url: "rubberfolio.vercel.app",
+    type: "website",
+    images: [
+      {
+        url: "/app/favicon.png",
+        alt: "Stylized Capital Letters B and B.",
+        type: "image/png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +53,8 @@ export default function RootLayout({
           >
             <DrawerComponent />
             {children}
+            <Analytics />
+            <SpeedInsights />
           </body>
         </ThemeProvider>
       </AppRouterCacheProvider>
