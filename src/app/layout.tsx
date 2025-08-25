@@ -4,6 +4,7 @@ import "./globals.css";
 import { Quicksand } from "next/font/google";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "../theme/theme";
+import DrawerComponent from "./drawer/page";
 
 const quicksand = Quicksand({
   weight: ["300", "400", "500", "700"],
@@ -30,9 +31,10 @@ export default function RootLayout({
           <body
             style={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection: "column",
             }}
           >
+            <DrawerComponent />
             {children}
           </body>
         </ThemeProvider>

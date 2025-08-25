@@ -12,10 +12,14 @@ This is the current state of my portfolio project.
 
 ### v.0.06 - Add MUI + theme with golden accent.
 
-#### v.0.062 - Routing setup (23.08.25 - CURRENT)
+#### v.0.062 - Routing setup
 
 - Added CssBaseline
 - Added basic routing
+
+#### v.0.063 - Added/Fixed button links (23.08.25)
+
+### v.0.07 - Created a navbar with links to different pages (25.08.25 - CURRENT)
 
 ## v0.1 – Initial Layout Setup
 

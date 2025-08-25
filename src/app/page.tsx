@@ -103,11 +103,16 @@ export default function Home() {
           </Paper>
         </Grid>
         <Grid size={8}>
-          <Button variant="outlined" color="error">
-            <Link href="/typography">
+          <Link href="/typography">
+            <Button variant="contained">
               <Typography variant="button">View Typography</Typography>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
+          <Link href="/drawer">
+            <Button variant="contained">
+              <Typography variant="button">View Drawer Component</Typography>
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </Container>
