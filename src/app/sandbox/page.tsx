@@ -5,7 +5,7 @@ export default function Sandbox() {
     <>
       <Container>
         <Grid container>
-          <Grid size={12}>
+          <Grid size={{ xs: 12, sm: 6 }}>
             <Box
               sx={{
                 maxHeight: "80vh",
@@ -30,12 +30,14 @@ export default function Sandbox() {
                   objectFit="cover"
                 />
               </Box>
-              <Typography variant="h2">Brian Blomlie</Typography>
-              <Typography variant="h6">
-                Webdesigner basert i Oslo-området
-              </Typography>
-              <Button variant="contained">Explore Stack</Button>
             </Box>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6 }}>
+            <Typography variant="h2">Brian Blomlie</Typography>
+            <Typography variant="h6">
+              Webdesigner basert i Oslo-området
+            </Typography>
+            <Button variant="contained">Explore Stack</Button>
           </Grid>
         </Grid>
       </Container>
