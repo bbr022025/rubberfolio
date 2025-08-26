@@ -27,6 +27,8 @@ This is the current state of my portfolio project.
 
 ##### v.0.072 - Layout fix (25.08.25 - CURRENT)
 
+#### v.0.08 - Basic Hero content (25.08.25 - CURRENT)
+
 ### v0.1 – Initial Layout Setup
 
 - Created Next.js project

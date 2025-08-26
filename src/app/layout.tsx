@@ -1,18 +1,26 @@
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Quicksand } from "next/font/google";
+// import { Quicksand } from "next/font/google";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "../theme/theme";
 import DrawerComponent from "./drawer/page";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Inter } from "next/font/google";
 
-const quicksand = Quicksand({
+// const quicksand = Quicksand({
+//   weight: ["300", "400", "500", "700"],
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-quicksand",
+// });
+
+const inter = Inter({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-quicksand",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={quicksand.variable}>
+    <html lang="en" className={inter.variable}>
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
           <CssBaseline />

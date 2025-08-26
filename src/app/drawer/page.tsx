@@ -24,6 +24,9 @@ export default function DrawerComponent() {
           <Link href="/drawer">
             <Typography variant="h5">Drawer</Typography>
           </Link>
+          <Link href="/sandbox">
+            <Typography variant="h5">Sandbox</Typography>
+          </Link>
         </Box>
       </Drawer>
     </>
